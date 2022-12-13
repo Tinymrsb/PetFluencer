@@ -20,7 +20,6 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +27,227 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/2251834c29.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2251834c29.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (max-width: 800px) {
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (max-width: 1000px) {
+        .about {
+          padding-top: 10rem;
+          zoom: 65%;
+        }
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (max-width: 1090px) {
+        /* .pawprints {
+  visibility: hidden; */
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+
+      /* font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+      :root {
+        --primary-color: #ffed66;
+        --secondary-color: #00cecb;
+        --accent-color: #ffed66;
+        --button-color: #ff5e5b;
+        --boxshadow-color: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      h1,
+      h2 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: bolder;
+        font-size: 6.5rem;
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .aboutme {
+        align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        height: 40rem;
+        font-size: 1.5rem;
+      }
+
+      .about img {
+        padding-right: 2rem;
+      }
+
+      .igfeed {
+        height: 35rem;
+        margin: auto auto;
+      }
+
+      .fillerstat {
+        padding: 2.5rem;
+        margin: 2rem auto;
+        background-color: var(--secondary-color);
+        width: 43rem;
+        height: 10rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #fff;
+        font-size: 2.5rem;
+        box-shadow: var(--boxshadow-color);
+      }
+
+      .biscuit1 {
+        max-height: 40rem;
+        position: absolute;
+        float: center;
+        clear: both;
+      }
+
+      .contact {
+        max-width: 50rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.75rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .navbar {
+        font-size: 1.75rem;
+      }
+
+      .hero {
+        margin-bottom: 10rem;
+        height: 40rem;
+        font-size: 1.75rem;
+      }
+
+      .services-offered {
+        margin-top: 5rem;
+        background-color: var(--secondary-color);
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        border-radius: 2rem;
+        box-shadow: var(--boxshadow-color);
+      }
+      .services {
+        height: 30rem;
+        margin-top: 10rem;
+        margin-bottom: 3rem;
+        font-size: 1.75rem;
+      }
+
+      .about-services {
+        padding-right: 6rem;
+        text-align: right;
+      }
+
+      .servicesimg {
+        height: 25rem;
+        width: 25rem;
+      }
+
+      .services-offered {
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif;
+        height: 10rem;
+      }
+
+      .opening-image {
+        background-color: var(--primary-color);
+        max-height: 35rem;
+      }
+
+      .pawprints {
+        max-height: 40rem;
+        float: right;
+      }
+
+      .work {
+        font-size: 1.75rem;
+        height: 30rem;
+        margin-top: 10rem;
+      }
+
+      .btn {
+        margin: 0 auto;
+        font-family: "Bebas Neue", cursive;
+        font-weight: 135;
+        font-size: 2.5rem;
+        color: #fff;
+        background-color: var(--button-color);
+        padding: 10px 30px;
+        border: solid var(--button-color) 2px;
+        box-shadow: var(--boxshadow-color);
+        border-radius: 9px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      .btn:hover {
+        transition: 1000ms;
+        padding: 10px 50px;
+        transform: translateY(-0px);
+        background-color: var(--button-color);
+        color: #ffffff;
+        border: solid 2px var(--button-color);
+      }
+
+      footer {
+        margin-top: 5rem;
+        padding-top: 4rem;
+        font-size: 2.3rem;
+        background-color: var(--primary-color);
+        height: 15rem;
+        text-align: center;
+      }
+
+      .fa-brands:hover {
+        zoom: 200%;
+      }
+    </style>
     <title>BiscuitSit</title>
   </head>
   <body>
@@ -191,32 +410,52 @@
 
       <div class="row contact">
         <div class="col-12">
-<div class="mb-3">
-  <label for="FormControlInput2" class="form-label">Company</label>
-  <input type="text" class="form-control" id="FormControlInput2">
-</div>
-<div class="mb-3">
-  <label for="FormControlInput3" class="form-label">Name</label>
-  <input type="text" class="form-control" id="FormControlInput3">
-</div>
-<div class="mb-3">
-  <label for="FormControlInput1" class="form-label">Email</label>
-  <input type="email" class="form-control" id="FormControlInput1" placeholder="adventure@products.co">
-</div>
-<div class="mb-3">
-  <label for="FormControlTextarea1" class="form-label">Message</label>
-  <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
-</div>
-<button class="btn">Submit</button>
+          <div class="mb-3">
+            <label for="FormControlInput2" class="form-label">Company</label>
+            <input type="text" class="form-control" id="FormControlInput2" />
+          </div>
+          <div class="mb-3">
+            <label for="FormControlInput3" class="form-label">Name</label>
+            <input type="text" class="form-control" id="FormControlInput3" />
+          </div>
+          <div class="mb-3">
+            <label for="FormControlInput1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="FormControlInput1"
+              placeholder="adventure@products.co"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="FormControlTextarea1" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="FormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button class="btn">Submit</button>
         </div>
       </div>
 
       <footer>
         <p>Check out these places you can find Biscuit!</p>
-        <a href="https://www.instagram.com/biscuitsit/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://twitter.com/Framed_Games/status/1570751857886011393?s=20&t=gBF4ZFdpyDEY48PbjCqRrQ" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="https://www.pinterest.com/tinyMrsB/dog-mom/biscuit-the-goldendoodle/" target="_blank"></a><i class="fa-brands fa-square-pinterest"></i>
-        <a href="https://www.reddit.com/r/Goldendoodles/" target="_blank"></a><i class="fa-brands fa-square-reddit"></i>
+        <a href="https://www.instagram.com/biscuitsit/" target="_blank"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a
+          href="https://twitter.com/Framed_Games/status/1570751857886011393?s=20&t=gBF4ZFdpyDEY48PbjCqRrQ"
+          target="_blank"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+        <a
+          href="https://www.pinterest.com/tinyMrsB/dog-mom/biscuit-the-goldendoodle/"
+          target="_blank"
+        ></a
+        ><i class="fa-brands fa-square-pinterest"></i>
+        <a href="https://www.reddit.com/r/Goldendoodles/" target="_blank"></a
+        ><i class="fa-brands fa-square-reddit"></i>
       </footer>
       <!-- Below DIV is Close of main container -->
     </div>
