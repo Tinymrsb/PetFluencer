@@ -4,6 +4,36 @@
   margin: 0;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 800px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1000px) {
+  .about {
+    padding-top: 10rem;
+    zoom: 65%;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1090px) {
+  /* .pawprints {
+  visibility: hidden; */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
@@ -24,6 +54,16 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 h1,
 h2 {
   font-family: "Bebas Neue", cursive;
@@ -35,23 +75,30 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.about {
-  height: 15rem;
+.aboutme {
+ align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  height: 40rem;
   font-size: 1.5rem;
+  
 }
 
 .about img {
   padding-right: 2rem;
 }
 
-.pinterest,
-.instagram,
+.igfeed {
+  height: 35rem;
+  margin: auto auto;
+}
+
 .fillerstat {
   padding: 2.5rem;
   margin: 2rem auto;
   background-color: var(--secondary-color);
-  max-width: 43rem;
-  max-height: 10rem;
+  width: 43rem;
+  height: 10rem;
   border-radius: 2rem;
   text-align: center;
   color: #fff;
@@ -63,22 +110,30 @@ p {
   max-height: 40rem;
   position: absolute;
   float: center;
-  /* center: 0; */
   clear: both;
+}
+
+.contact {
+  max-width: 50rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
   font-size: 1.75rem;
+
 }
 
 .hero {
   margin-bottom: 10rem;
-  height: 35rem;
-  font-size: 1.5rem;
+  height: 40rem;
+  font-size: 1.75rem;
 }
 
 .services-offered {
-  margin-top: 3rem;
+  margin-top: 5rem;
   background-color: var(--secondary-color);
   color: white;
   font-weight: bolder;
@@ -89,8 +144,8 @@ p {
 .services {
   height: 30rem;
   margin-top: 10rem;
-  margin-bottom: 10rem;
-  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.75rem;
 }
 
 .about-services {
@@ -104,9 +159,9 @@ p {
 }
 
 .services-offered {
-  display: flex;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
+  height: 10rem;
 }
 
 .opening-image {
@@ -116,10 +171,13 @@ p {
 
 .pawprints {
   max-height: 40rem;
-  position: absolute;
   float: right;
-  right: 0;
-  clear: both;
+}
+
+.work {
+  font-size: 1.75rem;
+  height: 30rem;
+  margin-top: 10rem;
 }
 
 .btn {
@@ -150,8 +208,14 @@ p {
 }
 
 footer {
-  font-size: 4rem;
   margin-top: 5rem;
+  padding-top: 4rem;
+  font-size: 2.3rem;
   background-color: var(--primary-color);
   height: 15rem;
+  text-align: center;
+}
+
+.fa-brands:hover {
+zoom:200%;
 }
